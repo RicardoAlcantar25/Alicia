@@ -492,7 +492,27 @@ button {
 
 .about_img {
      padding: 40px 30px 45px 30px;
-}
+     background-color: #f0f0f0; /* Fondo claro para que se resalte */
+     border-radius: 8px; /* Bordes redondeados */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor */
+     transition: all 0.3s ease-in-out; /* Transición suave para efectos de hover */
+     text-align: center; /* Alineación de contenido */
+ }
+ 
+ /* Efecto al pasar el mouse */
+ .about_img:hover {
+     background-color: #e0e0e0; /* Fondo un poco más oscuro al hacer hover */
+     transform: translateY(-5px); /* Sube ligeramente la imagen */
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+ }
+ 
+ /* Si la imagen es dentro de la clase .about_img */
+ .about_img img {
+     max-width: 100%; /* Para asegurarse de que la imagen no se salga de su contenedor */
+     height: auto; /* Mantiene la proporción de la imagen */
+     border-radius: 4px; /* Bordes redondeados en la imagen */
+ }
+ 
 
 .about_img::before {
      position: absolute;
@@ -1081,7 +1101,7 @@ button {
      overflow: hidden; /* Evita que el contenido sobresalga */
      border-radius: 15px; /* Bordes redondeados */
      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
-     background: linear-gradient(135deg, #6a11cb, #2575fc); /* Fondo degradado moderno */
+     background: linear-gradient(135deg, #2da0a6, #f4943f); /* Fondo degradado moderno */
      display: flex; /* Usa Flexbox para centrar el contenido */
      justify-content: center; /* Centra horizontalmente */
      align-items: center; /* Centra verticalmente */
